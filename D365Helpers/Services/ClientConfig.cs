@@ -3,9 +3,10 @@ namespace D365Helpers.Services
 {
     class ClientConfig
     {
-        public static ClientConfig Default { get { return ClientConfig.CloudAX; } }
+        public static ClientConfig Default { get { return ClientConfig.config; } }
+        public static ClientConfig New { get { return new ClientConfig(); } }
 
-        public static ClientConfig CloudAX = new ClientConfig()
+        public static ClientConfig config = new ClientConfig()
         {
 
             //UriString = "https://devaos.cloudax.dynamics.com/",
